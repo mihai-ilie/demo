@@ -1,0 +1,166 @@
+// General block
+.block {
+  width: $block-width;
+  box-shadow: 0 3px 0 0 rgba(227,228,232,1);
+  margin: 10px 10px 20px;
+  border-radius: 2px;
+  background: $block-color;
+  @include media-breakpoint-down(sm) {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  &:after {
+    @extend .after-row;
+  }
+  .btn-1 {
+    @include font-size(12px);
+    text-transform: uppercase;
+  }
+  .social-media {
+    i {
+      color: $social-media-color;
+      &:hover {
+        color: $social-media-color-hover;
+      }
+    }
+  }
+  h3 {
+    line-height: 1.4;
+  }
+  p {
+    @include font-size(12px);
+  }
+}
+
+// Block 1
+.block_1 {
+  display: flex;
+  .block_1-col-left {
+    float: left;
+    width: 40%;
+    padding: 10px;
+    text-align: center;
+    img {
+      margin-bottom: 14px;
+    }
+  }
+  .block_1-col-right {
+    background: $white;
+    float: left;
+    width: 60%;
+    padding: 10px 25px 10px 20px;
+    font-weight: 300;
+  }
+  .block_1-media {
+    margin: 33px 13px 0;
+    div[class^='col-sm-'] {
+      padding: 0 10px;
+    }
+  }
+  h3 {
+    @include font-size(18px);
+    font-weight: 400;
+    color: $gray-light;
+  }
+  p {
+    color: $gray-light;
+    line-height: 1.4;
+    &.read-more-text {
+      transition: max-height 1s;
+      overflow: hidden;
+      max-height: 0;
+    }
+  }
+  a.read-more {
+    @include font-size(12px);
+  }
+}
+
+// Block 2
+.block_2 {
+  .top-banner {
+    text-align: center;
+    background: url("../images/image3.png") center center;
+    padding: 11px 0;
+    .banner-image-wrapper {
+      width: $block2-image-width;
+      padding: 8px;
+      margin: 0 auto;
+      border-radius: 100px;
+      border: 1px solid $border1-color;
+      background-color: rgba(256, 256, 256, 0.1);
+    }
+  }
+  .twitter-info {
+    text-align: center;
+    &:after {
+      @extend .after-row;
+    }
+    > div {
+      padding: 10px 0 0;
+      &:after {
+        content: "";
+        display: block;
+        border-bottom: 3px solid;
+        margin-top: 10px;
+      }
+    }
+    .twitter-left {
+      &:after {
+        border-color: $twitter1-color;
+      }
+    }
+    .twitter-center {
+      border-left: 1px solid $border2-color;
+      border-right: 1px solid $border2-color;
+      &:after {
+        border-color: $twitter2-color;
+      }
+    }
+    .twitter-right {
+      &:after {
+        border-color: $twitter3-color;
+      }
+    }
+    span {
+      display: block;
+      @include font-size(12px);
+      line-height: 1.1;
+      color: $gray-medium;
+      &.twitter-title {
+        font-weight: 300;
+      }
+      &.twitter-number {
+        font-weight: 600;
+      }
+    }
+  }
+  .twitter-content {
+    padding: 20px;
+    font-family: $open-sans;
+    background: $white;
+    h3 {
+      @include font-size(16px);
+      font-weight: 300;
+      color: $gray-lighter;
+    }
+    p {
+      font-weight: 300;
+      line-height: 1.6;
+      color: $gray-dark;
+      margin: 0;
+      span {
+        font-weight: 600;
+      }
+    }
+  }
+  .twitter-social {
+    text-align: center;
+    padding: 11px 75px;
+    i {
+      @include font-size(18px);
+      color: $social-media-color;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "ejobs_test",
+  "version": "0.1.0",
+  "devDependencies": {
+    "bootstrap": "https://github.com/twbs/bootstrap.git#v4-dev",
+    "grunt": "^0.4.5",
+    "grunt-contrib-compass": "^1.1.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-postcss": "^0.6.0",
+    "autoprefixer": "^6.1.2"
+  }
+}

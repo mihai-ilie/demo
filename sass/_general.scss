@@ -1,0 +1,42 @@
+body {
+  background: $body-bg-color;
+  font-family: $roboto;
+}
+
+// Utility classes
+.hidden {
+  display: none;
+}
+.display-block {
+  display: block;
+}
+.after-row {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+// Defaults
+a {
+  color: $link-color;
+  &:hover {
+    color: $link-color-hover;
+  }
+}
+.btn {
+  padding: 5px 15px;
+  line-height: 1;
+  &.btn-primary {
+    color: $white;
+    background-color: $btn-primary-color;
+    border-color: $btn-primary-color;
+    &:hover,
+    &:active,
+    &:focus {
+      color: $white;
+      background-color: $btn-primary-color-hover;
+      border-color: $btn-primary-color-hover;
+      outline: none;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+// Colors
+$white:                     #ffffff !default;
+$gray-lighter:              #abb1b5 !default;
+$gray-light:                #989fa9 !default;
+$gray-medium:               #818a8c !default;
+$gray-dark:                 #434a54 !default;
+
+$body-bg-color:             #f0f2f5 !default;
+$block-color:               #f6f8fa !default;
+$social-media-color:        #d7d8dd !default;
+$social-media-color-hover:  darken($social-media-color, 10%) !default;
+
+$link-color:                #4fc1e9 !default;
+$link-color-hover:          darken($link-color, 10%) !default;
+
+$border1-color:             #bbbbbb !default;
+$border2-color:             #eaecef !default;
+
+$btn-primary-color:         #4fc1e9 !default;
+$btn-primary-color-hover:   darken($link-color, 10%) !default;
+
+$twitter1-color:            #fc6e51 !default;
+$twitter2-color:            #48cfad !default;
+$twitter3-color:            #ac92ec !default;
+
+// Fonts
+$open-sans:                 "Open Sans", sans-serif !default;
+$roboto:                    Roboto, sans-serif !default;
+
+// Sizes
+$block-width:               320px;
+$block2-image-width:        118px;
